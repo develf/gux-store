@@ -1,0 +1,6 @@
+(channel-news
+ (version 0)
+  (entry (commit "19c55f5caee5e26683175d16344d98752820e9cc")
+	(title (en "Initial commit")
+	       (ru "Превый коммит"))
+	(body (ru "Тестовый вариант"))))

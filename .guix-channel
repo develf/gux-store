@@ -1,0 +1,5 @@
+(channel
+ (version 0)
+ (directory "gux")
+ (news-file "NEWS.txt"))
+ 
