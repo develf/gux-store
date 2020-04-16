@@ -12,12 +12,14 @@
 	      (method url-fetch)
 	      (uri (string-append "https://peervpn.net/files/peervpn-" version
 				  "-linux-x86.tar.gz"))
+	      
 	      (sha256
 	       (base32 "08r3cb5q1n6z4apf4m0nqwfbdxc2wqsgdqdqyddk4hhp9n9mj575"))))
     ;;(base32 "14l3xlps23g9r202b385d8p9rsxrhkcmbd5fp22zz5bdjp7da0j4"))))
 
-    (build-system copy-build-system)
-    ("peervpn" "bin/")
+    (build-system copy-build-system
+		  ("peervpn" "bin/"))
+    
     (synopsis "PeerVPN is a software that builds virtual ethernet networks between multiple computers.")
     (description
      "Most traditional VPN solutions follow the client-server principle, which means that all participating nodes connect to a central server. This creates a star topology, which has some disadvantages. The central node needs lots of bandwith, because it needs to handle all the VPN traffic. Also, if the central node goes down, the whole VPN is down too.
