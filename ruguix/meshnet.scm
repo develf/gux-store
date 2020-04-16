@@ -1,4 +1,4 @@
-(define-module (gux meshnet)
+(define-module (ruguix meshnet)
   #:use-module (guix packages)
   #:use-module (guix download)
   #:use-module (guix build-system copy)
