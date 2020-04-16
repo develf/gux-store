@@ -6,7 +6,7 @@
 
 (define-public peervpn
   (package
-    (name "peervpn-x86")
+    (name "peervpn")
     (version "0-044")
     (source (origin
 	      (method url-fetch)
