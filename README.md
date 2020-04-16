@@ -7,8 +7,10 @@
 
 $ cat ~/.config/guix/channels.scm
 
+``` scheme
 (cons* (channel
 	(name 'gux-store)
 	(url "https://github.com/develf/ruguix")
 	(branch "master"))
        %default-channels)
+```
