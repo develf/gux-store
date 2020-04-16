@@ -15,17 +15,18 @@
 	      
 	      (sha256
 	       (base32 "08r3cb5q1n6z4apf4m0nqwfbdxc2wqsgdqdqyddk4hhp9n9mj575"))))
-    ;;(base32 "14l3xlps23g9r202b385d8p9rsxrhkcmbd5fp22zz5bdjp7da0j4"))))
 
     (build-system copy-build-system)
     (arguments
      '(#:install-plan '(("peervpn" "bin/"))))
-    (synopsis "PeerVPN is a software that builds virtual ethernet networks between multiple computers.")
+    (synopsis "PeerVPN - это программное обеспечение для построения ethernet-сетей между компьютерами")
+
     (description
-     "Most traditional VPN solutions follow the client-server principle, which means that all participating nodes connect to a central server. This creates a star topology, which has some disadvantages. The central node needs lots of bandwith, because it needs to handle all the VPN traffic. Also, if the central node goes down, the whole VPN is down too.
+     "Большинство традиционнх решений VPN преследуют прицнип клиент-сервер, что значит что все участвующие ноды подключаются к центральному серверу. Это создает топологию типа 'звезда', со своими сопуствующими недостатками. Центральная нода требует хорошего канала, потому что ей необходимо обрабатывать весь VPN трафик. Кроме того, если центральная нода станет недоступной, все подключенные к ней ноды так же станут недоступны. 
 
-A virtual network built by PeerVPN uses a full mesh topology. All nodes talk directly to each other, there is no need for a central server. If one node goes down, the rest of the network is unaffected.
+Виртуальная сеть, построенная с помощью PeerVPN использую полную меш-топологию. Каждая нода общается с другой на прямую, здесь нет необходимости в центральном сервере. Если одна из нод станет недоступна, то на оставшуюся сеть это не повлияет.
 
-Configuring PeerVPN is easy. You just need to configure a network name, a password and the contact information (IP address and port) of another PeerVPN node. Adding a new node to an existing network doesn't require the existing nodes to alter their configuration, because its IP address is automatically distributed across the whole virtual network.")
+PeerVPN легко конфигурируем. Необходимо просто указать имя сети, пароль и сетевой адрес (IP-адрес/DNS и порт) другой PeerVPN ноды. Добавление новой ноды к существующей сети не требует переконфигурирования существующих нод, потому что ее IP-адрес автоматически распределяется по всей виртуальной сети.
+")
     (home-page "https://peervpn.net/")
     (license gpl3+)))
