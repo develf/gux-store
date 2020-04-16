@@ -4,7 +4,7 @@
   #:use-module (guix build-system copy)
   #:use-module (guix licenses))
 
-(define-public peervpn-x86
+(define-public meshnet
   (package
     (name "peervpn")
     (version "0-044")

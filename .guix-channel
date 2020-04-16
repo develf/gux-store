@@ -1,5 +1,5 @@
 (channel
  (version 0)
- (directory "gux")
+;; (directory "gux")
  (news-file "NEWS.txt"))
  
